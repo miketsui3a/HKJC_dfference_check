@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="//common.hkjc.com/wa/VisitorAPI.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/common.js"></script>
+
+
+    <title>HKJC - Ranking</title>
+  </head>
+  <body>
+  <div class="screen-size">
+      <div class="background" style="background: url(./image/ranking_background.png) center center no-repeat;">
+
+          <div class="container">
+             
+         
+             <div class="nav">
+                <div class="back">
+                    <a href="index.html">
+                        <img src="./image/back.png" alt="">
+                    </a>
+                </div>
+                <div class="home">
+                    <a href="index.html">
+                        <img src="./image/home.png" alt="">
+                    </a>
+                </div>
+             </div>
+             
+              <div class="trophy">
+                  <img src="./image/leadership/trophy.png" alt="">
+              </div>
+              <div class="ranking">
+                  <h2 class="font-chi">積分榜</h2>
+              </div>
+              
+              <div class="list">
+                  <ul>
+                      <li class="list-content">
+                          <div class="rank">
+                              <img src="./image/leadership/st_rank.png" alt="">
+                          </div>
+                          <div class="score">
+                              <div class="font-prov"><h1>270,000</h1></div>
+                          </div>
+                      </li>
+                      <li class="list-content">
+                          <div class="rank">
+                              <img src="./image/leadership/nd_rank.png" alt="">
+                          </div>
+                          <div class="score">
+                              <div class="font-prov"><h1>22,020</h1></div>
+                          </div>
+                      </li>
+                      <li class="list-content">
+                          <div class="rank">
+                              <img src="./image/leadership/rd_rank.png" alt="">
+                          </div>
+                          <div class="score">
+                              <div class="font-prov"><h1>12,020</h1></div>
+                          </div>
+                      </li>
+                      <li class="list-content">
+                          <div class="rank">
+                          </div>
+                          <div class="score">
+                              <div class="font-prov"><h3>.</h3></div>
+                              <div class="font-prov"><h3>.</h3></div>
+                              <div class="font-prov"><h3>.</h3></div>
+                          </div>
+                      </li>
+                      <li class="list-content">
+                          <div class="rank">
+                              <div class="font-prov"><h1>96</h1></div>
+                          </div>
+                          <div class="score">
+                              <div class="font-prov"><h1>9,440</h1></div>
+                          </div>
+                      </li>
+                      <li class="list-content">
+                          <div class="rank">
+                              <div class="font-prov"><h1>97</h1></div>
+                          </div>
+                          <div class="score">
+                              <div class="font-prov"><h1>6,340</h1></div>
+                          </div>
+                      </li>
+                      <li class="list-content">
+                          <div class="rank">
+                              <div class="font-prov"><h1>98</h1></div>
+                          </div>
+                          <div class="score">
+                              <div class="font-prov"><h1>5,290</h1></div>
+                          </div>
+                      </li>
+                      <li class="list-content">
+                          <div class="rank">
+                              <div class="font-prov"><h1>99</h1></div>
+                          </div>
+                          <div class="score">
+                              <div class="font-prov"><h1>4,490</h1></div>
+                          </div>
+                      </li>
+                      <li class="list-content">
+                          <div class="rank">
+                              <div class="font-prov"><h1>100</h1></div>
+                          </div>
+                          <div class="score">
+                              <div class="font-prov"><h1>3,190</h1></div>
+                          </div>
+                      </li>
+                  </ul>
+              </div>
+              
+              <div class="notice">
+                  <h6>積分結算時間為每日正午至翌日上午11時59分止，每日積分榜首100名參加者並成功提交個人資料，即有機會獲得豐富獎品。<br>The settlement time of score is between 12:00pm to 11:59am the day after. The participants who have completed the game as the top 100 scorers of the day (between 12:00pm to 11:59am the next day) and submitted their personal information successfully will win the prize.</h6>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+    <script src="//common.hkjc.com/wa/wa_tracker.js"></script>
+    <script src="//common.hkjc.com/wa/wa_tracker_config.js"></script>
+    <script>
+        var waTaggingFired = false;
+
+        var firedfunc = function() {
+            if(waTaggingFired){
+                return;
+            }
+
+            //Original WA tagging logic goes here
+
+            try {
+                WATracker.trackPageView('2021SO');
+            } catch (e) {}
+
+
+            waTaggingFired = true;
+        };
+
+        if ( typeof(SSO) == 'undefined') {
+        }
+        else {
+            SSO.OnUserProfileLoaded(firedfunc);
+        }
+    </script>
+   <script src="js/common.js"></script>
+   
+  </body>
+</html>

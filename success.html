@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="//common.hkjc.com/wa/VisitorAPI.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/common.js"></script>
+
+
+    <title>HKJC - Success</title>
+  </head>
+  <body>
+  <div class="screen-size">
+      <div class="background" style="background: url(./image/background.png) center 20% no-repeat;">
+          <div class="container">
+            <div class="icon">
+                <img src="./image/icon.png" alt="">
+            </div>
+             
+             <div class="tick">
+                 <img src="./image/tick.png" alt="">
+             </div>
+              
+              <div class="success-font"> 
+                  <h2 class="font-chi">遞 交 成 功</h2><br>
+                  <h2 class="font-prov">Success Submission</h2>
+              </div>
+              
+              <div class="textbox">
+                 <div class="text-container">
+                     <p>你的表格已成功遞交，多謝參與！</p>
+                     <p>Your form has been submitted successfully. <br>Thanks for your participation.</p>
+                     <br>
+                      <ul>
+                          <li>每名參加者最多只可獲獎一次，以登記手提電話號碼為準，所有奬品不設代領。<br>Each participant (as determined by the mobile phone number registered) can only win one prize. Redemption by third parties is not allowed.</li>
+                          <br>
+                          <li>結果將於<span class="red">8月22日至9月5日</span>，每日下午6時前，在<a href="https://ctr-campaigns.hkjc.com/202021-pv-season-opening/ch/game"><u>本網頁</u></a>內公佈。<br>The winners list will be announced on <a href="https://ctr-campaigns.hkjc.com/202021-pv-season-opening/en/game"><u>this page</u></a> <span class="red">between Aug 22 to September 5</span> (before 6pm for each day).</li>
+                          <br>
+                          <li>得獎者將於<span class="red">2020年9月13日或之前</span>獲個別手機短訊通知領獎詳情。<br>Winners will be notified individually <span class="red">on or before September 13, 2020 </span>by SMS, and given details of prize collection.</li>
+                          <br>
+                          <li>得獎者必須根據得獎通知短訊之指定時間及地點領獎，逾時將被取消資格。<br>Prizes are redeemable at designated location within specified hours according to the winner notification SMS text message. No prizes will be granted after the designated prize collection period.</li>
+                          <br>
+                          <li>一切出自手機短訊延誤而所引發之所有問題，本會概不負責，並且不會補發獎品。<br>The Hong Kong Jockey Club shall not be responsible for any loss or damage arising from delay in transmission of any SMS text messages. No prize will be granted after the designated prize collection period.</li>
+                          <br>
+                      </ul>
+                      <p>所有參加者確認已閱讀及明白香港賽馬會《私穩政策聲明》，聲明刋登於 <a href="http://www.hkjc.com/chinese/corporate/corp_privacy.asp" style="line-break: anywhere;">http://www.hkjc.com/chinese/corporate/corp_privacy.asp</a></p>
+                      <br>
+                      <p>All participants expressly confirm that they have read and understood the Notice relating to the Personal Data (Privacy) Ordinance at <a href="http://www.hkjc.com/chinese/corporate/corp_privacy.asp" style="line-break: anywhere;">http://www.hkjc.com/chinese/corporate/corp_privacy.asp</a></p>
+                 </div>
+                  
+              </div>
+              
+              
+              <div class="facebook">
+                  <a href="https://www.facebook.com/sharer/sharer.php" data-rel="fb-share" data-id="xxxx" data-watracker="click" data-event-id="btn_shareFacebook_2021SO_GAME_TKS" data-share-event-id="FBVEPOA_2021SO_GAME_TKS">
+                    
+                     <div class="fb-logo">
+                         <img src="./image/fb-icon.png" alt="">
+                     </div>
+                     <div class="fb-word">
+                      <h3 class="font-prov"><span class="font-chi">分享你的分數</span> </h3>
+                      <h5 class="font-prov">Share your score</h5>
+                     </div>
+                  </a>
+              </div>
+              
+              <div class="line"></div>
+              
+              
+              <div class="btn replay-btn">
+                  <a href="index.html" data-watracker="click" data-event-id="2021SO_GAME_REPLAY_TKS">
+                      <div class="font-prov"><span class="font-chi">再玩一次 </span> REPLAY</div>
+                  </a>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+    <script src="//common.hkjc.com/wa/wa_tracker.js"></script>
+    <script src="//common.hkjc.com/wa/wa_tracker_config.js"></script>
+    <script>
+        var waTaggingFired = false;
+
+        var firedfunc = function() {
+            if(waTaggingFired){
+                return;
+            }
+
+            //Original WA tagging logic goes here
+
+            try {
+                WATracker.trackPageView('2021SO');
+            } catch (e) {}
+
+
+            waTaggingFired = true;
+        };
+
+        if ( typeof(SSO) == 'undefined') {
+        }
+        else {
+            SSO.OnUserProfileLoaded(firedfunc);
+        }
+    </script>
+   <script src="js/common.js"></script>
+   
+      <!-- 
+   1) Game page (real url):
+
+    https://campaigns.hkjc.com/season-opening/en/game
+
+    https://campaigns.hkjc.com/season-opening/ch/game
+
+    2) Game page (testing url):
+
+    https://ctr-campaigns.hkjc.com/202021-pv-season-opening/en/game
+
+    https://ctr-campaigns.hkjc.com/202021-pv-season-opening/ch/game-->
+  </body>
+</html>

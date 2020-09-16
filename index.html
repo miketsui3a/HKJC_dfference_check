@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="//common.hkjc.com/wa/VisitorAPI.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/common.js"></script>
+
+
+    <title>HKJC - form</title>
+  </head>
+  <body>
+  <div class="screen-size">
+      <div class="background" style="background: url(./image/background.png) center 20% no-repeat;">
+          <div class="container">
+             
+            <div class="icon">
+                <img src="./image/icon.png" alt="">
+            </div>
+             
+              <form action="success.html" class="submit-form">
+              <div class="result-form"  style="overflow: scroll;">
+                  <ul>
+                      <li class="result-index">
+                          <div class="player-result-png">
+                              <img src="./image/cup.png" alt="">
+                          </div>
+                          <div class="result">
+                              <div class="font-prov player-result"><span class="font-chi">得 分 </span> SCORE</div>
+                              <div class="font-prov player-result">74,087</div>
+                          </div>
+                      </li>
+                      <li>
+                          <div class="name">
+                             <label for="player-name" class="name-title">
+                                 <div class="font-chi">英文姓名</div> 
+                                 <div class="font-prov">Name</div>
+                             </label>
+                              <input type="text" id="player-name" name="player-name" required>
+                          </div>
+                          <div class="form-notice">
+                          <h6>例：Chan Tai Man | 與身份證上的英文全名相同<br>e.g. Chan Tai Man | Must be the same as HKID card</h6>
+                          </div>
+                          <div class="alert">
+                              <h6>請輸入正確姓名。<br>Please fill in correct name.</h6>
+                          </div>
+                          <label for="mobile"  class="mobile">
+                             <div class="mobile-title">
+                                 <div class="font-chi">香港手提號碼</div> 
+                                 <div class="font-prov">HK Mobile</div>
+                             </div>
+                              <input type="tel" id="mobile" name="mobile" pattern="[2-9]{1}[0-9]{7}" maxlength="8" required>
+                          </label>
+                          
+                          <div class="form-notice">
+                          <h6>例：9876 5432  e.g. 9876 5432</h6>
+                          </div>
+                          <div class="alert">
+                              <h6>請輸入正確手提號碼。<br>Please fill in correct mobile number.</h6>
+                          </div>
+                          
+                          <div class="form-notice">
+                              <h6>*上述資料將作通知及領獎用途，請確定正確無誤，以便日後個別通知及領獎核對事宜。<br>*Please ensure the information is valid for winners' notification and prize redemption.</h6>
+                          </div>
+                          
+                          
+                          <div class="captcha">
+                              <div class="captcha-img">
+                                  <img src="./image/check.png" alt="">
+                                  
+                                  <button class="refresh">
+                                      <img src="./image/refresh.png" alt="">
+                                  </button>
+                              </div>
+                              <div class="captcha-btm">
+                                 
+                                 
+                              <div class="captcha-input">
+                                  <label for="captcha" class="name-title">
+                                 <div class="font-chi">輸入驗證碼</div> 
+                                 <div class="font-prov">Verification&nbsp;Code</div>
+                                 </label>
+                                  <input type="text" id="captcha" required>
+                              </div>
+                              </div>
+                          </div>
+                          
+                          <div class="alert">
+                              <h6>請輸入驗證碼。<br>Please enter verification code.</h6>
+                          </div>
+                          
+                      </li>
+                  </ul>
+              </div>
+              <div class="tnc-click">
+                  <input type="checkbox" id="tnc" name="tnc" value="agree" required>
+                  <label for="tnc">
+                      <h6>本人已年滿18歲。參加此活動時，本人確認已閱讀及明白有關的<a href="tnc_TC.html"><u>條款及細則</u></a>及<a href="http://www.hkjc.com/chinese/corporate/corp_privacy.asp"><u>個人資料 (私隱) 條例</u></a>的通告。<br>I am aged at least 18 and have read and agreed to all <a href="tnc_EN.html"><u>Terms and Conditions</u></a> and the <a href="http://www.hkjc.com/english/corporate/corp_privacy.asp"><u>Personal Data (Privacy) Ordinance</u></a>.</h6>
+                  </label>
+              </div>
+              <div class="tnc-click">
+                  <input type="checkbox" id="promo" name="promo" value="agree" required>
+                  <label for="promo">
+                      <h6>本人反對接收香港賽馬會之宣傳推廣通訊。<br>I object to accepting promotional materials from The Hong Kong Jockey Club.</h6>
+                  </label>
+              </div>
+              
+              <button class="replay-btn btn">
+                  <div class="font-prov"><span class="font-chi">傳 送</span> SUBMIT</div>
+              </button>
+              
+              <div class="btn submit-btn">
+                  <a href="#" data-watracker="click" data-event-id="2021SO_GAME_REPLAY_SFORM">
+                      <div class="font-prov"><span class="font-chi">再玩一次</span> REPLAY</div>
+                  </a>
+              </div>
+              
+              </form>
+              
+              
+              <div class="line"></div>
+              
+              <div class="facebook">
+                  <a href="https://www.facebook.com/sharer/sharer.php" data-rel="fb-share" data-id="xxxx" data-watracker="click" data-event-id="btn_shareFacebook_2021SO_GAME_TKS" data-share-event-id="FBVEPOA_2021SO_GAME_TKS">
+                    
+                     <div class="fb-logo">
+                         <img src="./image/fb-icon.png" alt="">
+                     </div>
+                     <div class="fb-word">
+                      <h3 class="font-prov"><span class="font-chi">分享你的分數</span> </h3>
+                      <h5 class="font-prov">Share your score</h5>
+                     </div>
+                  </a>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+    <script src="//common.hkjc.com/wa/wa_tracker.js"></script>
+    <script src="//common.hkjc.com/wa/wa_tracker_config.js"></script>
+    <script>
+        var waTaggingFired = false;
+
+        var firedfunc = function() {
+            if(waTaggingFired){
+                return;
+            }
+
+            //Original WA tagging logic goes here
+
+            try {
+                WATracker.trackPageView('2021SO');
+            } catch (e) {}
+
+
+            waTaggingFired = true;
+        };
+
+        if ( typeof(SSO) == 'undefined') {
+        }
+        else {
+            SSO.OnUserProfileLoaded(firedfunc);
+        }
+    </script>
+   <script src="js/common.js"></script>
+  </body>
+</html>
