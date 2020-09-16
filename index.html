@@ -23,78 +23,78 @@
             </div>
              
               <form action="success.html" class="submit-form">
-              <div class="result-form"  style="overflow: scroll;">
-                  <ul>
-                      <li class="result-index">
-                          <div class="player-result-png">
-                              <img src="./image/cup.png" alt="">
-                          </div>
-                          <div class="result">
-                              <div class="font-prov player-result"><span class="font-chi">得 分 </span> SCORE</div>
-                              <div class="font-prov player-result">74,087</div>
-                          </div>
-                      </li>
-                      <li>
-                          <div class="name">
-                             <label for="player-name" class="name-title">
-                                 <div class="font-chi">英文姓名</div> 
-                                 <div class="font-prov">Name</div>
-                             </label>
-                              <input type="text" id="player-name" name="player-name" required>
-                          </div>
-                          <div class="form-notice">
-                          <h6>例：Chan Tai Man | 與身份證上的英文全名相同<br>e.g. Chan Tai Man | Must be the same as HKID card</h6>
-                          </div>
-                          <div class="alert">
-                              <h6>請輸入正確姓名。<br>Please fill in correct name.</h6>
-                          </div>
-                          <label for="mobile"  class="mobile">
-                             <div class="mobile-title">
-                                 <div class="font-chi">香港手提號碼</div> 
-                                 <div class="font-prov">HK Mobile</div>
-                             </div>
-                              <input type="tel" id="mobile" name="mobile" pattern="[2-9]{1}[0-9]{7}" maxlength="8" required>
+              <div class="result-form">
+                 
+                <div class="light-effect style3"></div>
+                <div class="light-effect style4"></div>
+                 
+                  <div class="result-index">
+                      <div class="player-result-png">
+                          <img src="./image/cup.png" alt="">
+                      </div>
+                      <div class="result">
+                          <div class="font-prov player-result"><span class="font-chi">得 分 </span> SCORE</div>
+                          <div class="font-prov player-result">74,087</div>
+                      </div>
+                  </div>
+                  <hr style="border:0; background-color:#349FD9; height:1px;">
+                  <div class="result-form-body">
+                      <div class="name">
+                          <label for="player-name" class="name-title">
+                              <div class="font-chi">英文姓名</div>
+                              <div class="font-prov">Name</div>
                           </label>
-                          
-                          <div class="form-notice">
+                          <input type="text" id="player-name" name="player-name" required>
+                      </div>
+                      <div class="form-notice">
+                          <h6>例：Chan Tai Man | 與身份證上的英文全名相同<br>e.g. Chan Tai Man | Must be the same as HKID card</h6>
+                      </div>
+                      <div class="alert">
+                          <h6>請輸入正確姓名。<br>Please fill in correct name.</h6>
+                      </div>
+                      <div class="mobile">
+                          <label for="mobile" class="mobile-title">
+                              <div class="font-chi">香港手提號碼</div>
+                              <div class="font-prov">HK Mobile</div>
+                          </label>
+                          <input type="tel" id="mobile" name="mobile" pattern="[2-9]{1}[0-9]{7}" maxlength="8" required>
+                      </div>
+
+                      <div class="form-notice">
                           <h6>例：9876 5432  e.g. 9876 5432</h6>
+                      </div>
+                      <div class="alert">
+                          <h6>請輸入正確手提號碼。<br>Please fill in correct mobile number.</h6>
+                      </div>
+
+                      <div class="form-notice">
+                          <h6>*上述資料將作通知及領獎用途，請確定正確無誤，以便日後個別通知及領獎核對事宜。<br>*Please ensure the information is valid for winners' notification and prize redemption.</h6>
+                      </div>
+
+
+                      <div class="captcha">
+                          <div class="captcha-img">
+                              <img src="./image/check.png" alt="">
+
+                              <button class="refresh">
+                                  <img src="./image/refresh.png" alt="">
+                              </button>
                           </div>
-                          <div class="alert">
-                              <h6>請輸入正確手提號碼。<br>Please fill in correct mobile number.</h6>
-                          </div>
-                          
-                          <div class="form-notice">
-                              <h6>*上述資料將作通知及領獎用途，請確定正確無誤，以便日後個別通知及領獎核對事宜。<br>*Please ensure the information is valid for winners' notification and prize redemption.</h6>
-                          </div>
-                          
-                          
-                          <div class="captcha">
-                              <div class="captcha-img">
-                                  <img src="./image/check.png" alt="">
-                                  
-                                  <button class="refresh">
-                                      <img src="./image/refresh.png" alt="">
-                                  </button>
-                              </div>
-                              <div class="captcha-btm">
-                                 
-                                 
+                          <div class="captcha-btm">
                               <div class="captcha-input">
                                   <label for="captcha" class="name-title">
-                                 <div class="font-chi">輸入驗證碼</div> 
-                                 <div class="font-prov">Verification&nbsp;Code</div>
-                                 </label>
+                                      <div class="font-chi">輸入驗證碼</div>
+                                      <div class="font-prov">Verification&nbsp;Code</div>
+                                  </label>
                                   <input type="text" id="captcha" required>
                               </div>
-                              </div>
                           </div>
-                          
-                          <div class="alert">
-                              <h6>請輸入驗證碼。<br>Please enter verification code.</h6>
-                          </div>
-                          
-                      </li>
-                  </ul>
+                      </div>
+
+                      <div class="alert">
+                          <h6>請輸入驗證碼。<br>Please enter verification code.</h6>
+                      </div>
+                  </div>
               </div>
               <div class="tnc-click">
                   <input type="checkbox" id="tnc" name="tnc" value="agree" required>
@@ -110,7 +110,10 @@
               </div>
               
               <button class="replay-btn btn">
-                  <div class="font-prov"><span class="font-chi">傳 送</span> SUBMIT</div>
+                     <div class="flex">
+                     <span class="font-chi">提交分數</span>
+                      <h5 class="font-prov">SUBMIT SCORES</h5>
+                     </div>
               </button>
               
               <div class="btn submit-btn">
@@ -131,8 +134,8 @@
                          <img src="./image/fb-icon.png" alt="">
                      </div>
                      <div class="fb-word">
-                      <h3 class="font-prov"><span class="font-chi">分享你的分數</span> </h3>
-                      <h5 class="font-prov">Share your score</h5>
+                      <h3 class="font-prov"><span class="font-chi">分享至FACEBOOK</span> </h3>
+                      <h5 class="font-prov">SHARE ON FACEBOOK</h5>
                      </div>
                   </a>
               </div>

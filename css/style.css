@@ -31,11 +31,11 @@ h3{
 }
 
 h5{
-    font-size: 14px;
+    font-size: 17px;
 }
 
 h6{
-    font-size: 10px;
+    font-size: 12px;
     line-height: 1rem;
 }
 
@@ -101,7 +101,7 @@ h6{
     text-align: center;
     height: 145px;
     margin-top: -30px;
-    margin-bottom: -28px;
+    margin-bottom: -10px;
     z-index: 999;
 }
 
@@ -116,6 +116,8 @@ h6{
     border-radius: 5px;
     width:90%; 
     margin-top: -5px;
+    position: relative;
+    max-width: 650px;
 }
 .list ul{
     width:80%; 
@@ -143,7 +145,7 @@ h6{
 .result-index{
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #349FD9;
+/*    border-bottom: 1px solid #349FD9;*/
     margin: 0 20px;
     padding-bottom: 6px
 }
@@ -173,14 +175,15 @@ h6{
 .notice{
     margin: 10px 0 40px 0;
     width:80%; 
+    max-width: 580px;
 }
 
 .result{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
     text-shadow: 2px 2px 4px #009DFF;
+    flex: 1;
 }
 
 .submit-form{
@@ -192,20 +195,15 @@ h6{
 
 .result-form{
     border-radius: 5px;
-    padding-bottom: 20px;
     background: url(../image/textbox_long.png) center center no-repeat;
     background-size: 118% 104%;
-    height: 100%;
+    padding: 20px 7% 10px 8%;
+    box-sizing: border-box;
     width: 100%;
-    padding-top: 20px;
-    padding-bottom: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    position: relative;
 }
 
-.result-form ul{
-    width: 80%;
+.result-form-body{
     margin-bottom: 18px;
 }
 
@@ -234,10 +232,8 @@ h6{
 
 .name,
 .mobile,
-.captcha-input{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.captcha-input {
+    position: relative;
     border: 2px solid #0060D9;
     border-radius: 50px;
     padding: 6px 16px;
@@ -250,18 +246,15 @@ h6{
     margin-top: 10px;
 }
 
-.mobile-title,
-.name-title{
-    flex: 1;
+.name label, .mobile label, .captcha-input label {
+    position: absolute;
+    left: 15px;
+    top: 17px;
+    width: 90px;
+    display: inline-block;
 }
-.mobile-title{
-    min-width: 72px;
-}
-
-#mobile,
-#captcha,
-#player-name{
-    flex: 2;
+.captcha-input label {
+    width: 120px;
 }
 
 .form-notice{
@@ -277,13 +270,18 @@ h6{
     background: none;
     border: none;
     color: #ffffff;
-    font-size: 18px;
-    width: 100%;
     font-family: chinese, Arial, Helvetica, sans-serif;
     text-align: left;
-    font-size: 20px;
-    margin-left: 4px;
+    font-size: 21px;
+    width: 100%;
+    padding-left: 90px;
+    box-sizing: border-box;
 }
+
+#captcha {
+    padding-left: 120px;
+}
+
 
 ::placeholder{
     color: #ffffff;
@@ -302,7 +300,10 @@ h6{
 }
 .tnc-click{
     display: flex;
-    margin: 6px 20px;
+    margin: 6px 0;
+    width: 100%;
+    padding: 0 8%;
+    box-sizing: border-box;
 }
 
 .tnc-click a{
@@ -336,6 +337,21 @@ h6{
 .replay-btn{
     background: url(../image/btn-blue.png) center center no-repeat;
     background-size: 100% 120%;
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -14px;
+}
+
+.flex > .font-chi{
+    margin: auto!important;
+}
+
+.flex > .font-prov{
+    margin-top: -10px;
 }
 
 .submit-btn a,
@@ -492,12 +508,76 @@ label{
 
 .textbox{
     background: url(../image/textbox.png) center center no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     height: 320px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    max-width: 650px;
+}
+
+
+
+
+.light-effect{
+    position: absolute;
+    background: url(../image/box_light.png) top center no-repeat;
+    background-size: cover;
+    width: 150px;
+    height: 40px;
+    z-index: 999;
+}
+
+
+.style1{
+    top: 22px;
+    left: 10%;
+    animation: style1 15s linear 2s infinite alternate;
+}
+
+@keyframes style1{
+    0% { left: 10%;}
+    100% { left: 60%;}
+}
+
+.style2{
+    transform: scale(0.7);
+    opacity: 0.8;
+    bottom: 4px;
+    right: 10%;
+    animation: style2 5s linear 2s infinite alternate;
+}
+
+@keyframes style2{
+    0% { right: 10%;}
+    100% { right: 30%;}
+}
+
+
+.style3{
+    top: -14px;
+    left: 0px;
+    animation: style3 6s linear 2s infinite alternate;
+}
+
+@keyframes style3{
+    0% { left: 5%;}
+    100% { left: 60%;}
+}
+
+.style4{
+    transform: scale(0.7);
+    opacity: 0.8;
+    bottom: -10px;
+    right: 20px;
+    animation: style4 5s linear 2s infinite alternate;
+}
+
+@keyframes style4{
+    0% { right: 20px;}
+    100% { right: 180px;}
 }
 
 .text-container{
@@ -539,12 +619,21 @@ label{
     
     .textbox{
         margin-top: -20px;
+        background-size: cover;
     }
     
     .list ul{
-        width: 80%;
+        width: 83%;
     }
 
+}
+
+.add-width{
+    width: 90%!important;
+}
+
+.add-width li{
+    padding-left: 10px;
 }
 
 .ranking{
@@ -555,6 +644,7 @@ label{
     display: flex;
     align-items: center;
     justify-content: center;
+    max-width: 600px;
 }
 
 .ranking.tnc{
